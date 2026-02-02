@@ -92,7 +92,7 @@
     messages.innerHTML += `<div class="msg user">${input.value}</div>`;
 
     // send to backend
-    const res = await fetch("http://localhost:3000/chat", {
+    const res = await fetch("https://dsa-ai-server-2.onrender.com/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: input.value })
@@ -110,3 +110,4 @@
 
 </body>
 </html>
+
